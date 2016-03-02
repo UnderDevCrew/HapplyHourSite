@@ -1,0 +1,21 @@
+{
+  "name": "happlyhoursite",
+  "description": "Web site for the HappliHour application",
+  "main": "index.php",
+  "authors": [
+    "UnderDevCrew"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}
