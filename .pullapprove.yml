@@ -1,0 +1,34 @@
+approve_by_comment: true
+approve_regex: '^:\+1:'
+reject_regex: '^Nope.'
+reject_value: -1
+reset_on_push: true
+author_approval: ignored
+reviewers:
+    -
+        name: admins
+        required: 1
+        members:
+            - pimolo
+        conditions:
+            branches:
+                - master  # only need to approve if merging to master
+                - dev
+    -
+        name: True developers
+        required: 2
+        members:
+            - ToxEn
+            - Evergreenn
+            condiftions:
+                branches:
+                    - dev
+    -
+        name: Front developers
+        required: 1
+        members:
+            - Neb19
+            - jeanbonlebon
+        conditions:
+                branches:
+                    - dev
