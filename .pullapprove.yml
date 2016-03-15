@@ -6,17 +6,18 @@ reset_on_push: true
 author_approval: ignored
 reviewers:
     -
-        name: admins
+        name: Release team
         required: 1
         members:
             - pimolo
+            - Evergreenn
         conditions:
             branches:
                 - master  # only need to approve if merging to master
                 - dev
     -
         name: True developers
-        required: 2
+        required: 1
         members:
             - ToxEn
             - Evergreenn
