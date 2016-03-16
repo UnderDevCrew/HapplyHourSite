@@ -5,24 +5,24 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
+      option: {
+        sourceMap: true
+      },
       dist: {
         files: [{
           expand: true,
-          cwd: 'www/sass',
+          cwd: 'www/assets/sass',
           src: ['*.scss', '!_*.scss'],
-          dest: 'www/css',
+          dest: 'www/assets/css',
           ext: '.css'
         }]
       }
     },
 
     concat: {
-      //options: {
-      //  separator: ';',
-      //},
-      dist: {
-        src: ['www/css/*.css'],
-        dest: 'www/css/style.css',
+      cssfiles: {
+        src: ['www/assets/css/*.css'],
+        dest: 'www/assets/css/app.css',
       },
     },
 
@@ -30,9 +30,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'www/css',
-          src: ['style.css', '!*.min.css'],
-          dest: 'www/css',
+          cwd: 'www/assets/css',
+          src: ['app.css', '!*.min.css'],
+          dest: 'www/assets/css',
           ext: '.min.css'
         }]
       }
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 
     watch: {
       css: {
-        files: 'www/sass/*.scss',
+        files: 'www/**/*.scss',
         tasks: ['css-tasks']
       }
     }
@@ -50,6 +50,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task(s).
-  grunt.registerTask('css-tasks', ['sass:dist', 'concat:dist', 'cssmin:dist']);
+  grunt.registerTask('css-tasks', ['sass:dist', 'concat:cssfiles', 'cssmin:dist']);
 
 };
