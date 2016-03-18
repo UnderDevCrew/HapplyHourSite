@@ -5,17 +5,17 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
-      option: {
-        sourceMap: true
-      },
       dist: {
-        files: [{
+	options: {
+	  sourceMap: true	
+	},
+	files: {
           expand: true,
           cwd: 'www/assets/sass',
           src: ['*.scss', '!_*.scss'],
           dest: 'www/assets/css',
           ext: '.css'
-        }]
+        }
       }
     },
 
