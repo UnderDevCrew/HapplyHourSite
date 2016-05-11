@@ -1,0 +1,79 @@
+// --------- General --------- \\
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.full-height {
+  height:100%;
+}
+
+// --------- First Home View --------- \\
+#homeview {
+
+  .app-title {
+    color: white;
+    font-size: 6em;
+  }
+
+  p {
+    font-size: 3em;
+    a {
+      color: white;
+      &:hover{
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+#img-section-one {
+  //background: url('../img/beer-background-one-min.jpg') no-repeat fixed center;
+  //background-size: cover;
+  height:60%;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+#img-section-two {
+  background: url('../img/beer-background-two.jpeg') no-repeat fixed center;
+  background-size: cover;
+}
+
+// --------- Section --------- \\
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  p {
+    font-size: 2em;
+  }
+}
+
+// --------- Footer --------- \\
+footer {
+  background: #2d2b2c;
+  padding-top: 70px;
+  padding-bottom: 150px;
+  color: white;
+
+  h3 {
+    color:white;
+  }
+
+  hr {
+    width: 10%;
+  }
+
+  .network-list {
+    font-size: 2.5em;
+    display: inline;
+  }
+
+  .copyright {
+    margin-top: 5%;
+  }
+}
