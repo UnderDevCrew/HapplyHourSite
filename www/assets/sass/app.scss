@@ -28,28 +28,23 @@ html, body {
   }
 }
 
+// ------- Image Section One //
 #img-section-one {
-  //background: url('../img/beer-background-one-min.jpg') no-repeat fixed center;
-  //background-size: cover;
   height:60%;
 }
 
+// ------- For Parallax Effect //
 .parallax-window {
   min-height: 400px;
   background: transparent;
 }
 
-#img-section-two {
-  background: url('../img/beer-background-two.jpeg') no-repeat fixed center;
-  background-size: cover;
-}
-
-// --------- Section --------- \\
+// --------- Section (Global) --------- \\
 section {
   padding-top: 100px;
   padding-bottom: 100px;
   p {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }
 

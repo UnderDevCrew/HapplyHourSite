@@ -23,15 +23,11 @@ html, body {
   min-height: 400px;
   background: transparent; }
 
-#img-section-two {
-  background: url("../img/beer-background-two.jpeg") no-repeat fixed center;
-  background-size: cover; }
-
 section {
   padding-top: 100px;
   padding-bottom: 100px; }
   section p {
-    font-size: 2em; }
+    font-size: 1.8em; }
 
 footer {
   background: #2d2b2c;
