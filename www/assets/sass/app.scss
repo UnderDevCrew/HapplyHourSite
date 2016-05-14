@@ -5,6 +5,7 @@ html, body {
   font-family: 'Quicksand', sans-serif;
 }
 
+// To expand all the viewport in height
 .full-height {
   height:100%;
 }
@@ -28,20 +29,15 @@ html, body {
   }
 }
 
+// Display a background (Parallax effect)
 #img-section-one {
-  //background: url('../img/beer-background-one-min.jpg') no-repeat fixed center;
-  //background-size: cover;
   height:60%;
 }
 
+// to use parallax effect.
 .parallax-window {
   min-height: 400px;
   background: transparent;
-}
-
-#img-section-two {
-  background: url('../img/beer-background-two.jpeg') no-repeat fixed center;
-  background-size: cover;
 }
 
 // --------- Section --------- \\
@@ -49,7 +45,7 @@ section {
   padding-top: 100px;
   padding-bottom: 100px;
   p {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }
 
