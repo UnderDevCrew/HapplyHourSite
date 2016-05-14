@@ -6,16 +6,13 @@ module.exports = function(grunt) {
 
     sass: {
       dist: {
-	options: {
-	  sourceMap: true	
-	},
-	files: {
+	  files: [{
           expand: true,
           cwd: 'www/assets/sass',
           src: ['*.scss', '!_*.scss'],
           dest: 'www/assets/css',
           ext: '.css'
-        }
+        }]
       }
     },
 
@@ -50,6 +47,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task(s).
-  grunt.registerTask('css-tasks', ['sass:dist', 'concat:cssfiles', 'cssmin:dist']);
+  grunt.registerTask('css-tasks', ['sass:dist', 'cssmin:dist']);
 
 };

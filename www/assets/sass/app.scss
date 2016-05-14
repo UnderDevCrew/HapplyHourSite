@@ -1,0 +1,75 @@
+// --------- General --------- \\
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+// To expand all the viewport in height
+.full-height {
+  height:100%;
+}
+
+// --------- First Home View --------- \\
+#homeview {
+
+  .app-title {
+    color: white;
+    font-size: 6em;
+  }
+
+  p {
+    font-size: 3em;
+    a {
+      color: white;
+      &:hover{
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// Display a background (Parallax effect)
+#img-section-one {
+  height:60%;
+}
+
+// to use parallax effect.
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+// --------- Section --------- \\
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  p {
+    font-size: 1.8em;
+  }
+}
+
+// --------- Footer --------- \\
+footer {
+  background: #2d2b2c;
+  padding-top: 70px;
+  padding-bottom: 150px;
+  color: white;
+
+  h3 {
+    color:white;
+  }
+
+  hr {
+    width: 10%;
+  }
+
+  .network-list {
+    font-size: 2.5em;
+    display: inline;
+  }
+
+  .copyright {
+    margin-top: 5%;
+  }
+}
