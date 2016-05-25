@@ -44,3 +44,5 @@ dist/
 
 ##Sass
 .sass-cache
+
+www/assets/bower_components

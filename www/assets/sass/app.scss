@@ -72,4 +72,11 @@ footer {
   .copyright {
     margin-top: 5%;
   }
+
+  a {
+    color : white;
+    &:hover {
+      color: white;
+    }
+  }
 }

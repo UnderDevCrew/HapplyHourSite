@@ -43,5 +43,9 @@ footer {
     display: inline; }
   footer .copyright {
     margin-top: 5%; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: white; }
 
 /*# sourceMappingURL=app.css.map */
