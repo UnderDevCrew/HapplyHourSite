@@ -10,7 +10,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'www/assets/sass',
           src: ['*.scss', '!_*.scss'],
-          dest: 'www/assets/css',
+          dest: 'www/assets/css/custom',
           ext: '.css'
         }]
       }
@@ -18,8 +18,8 @@ module.exports = function(grunt) {
 
     concat: {
       cssfiles: {
-        src: ['www/assets/css/*.css'],
-        dest: 'www/assets/css/app.css',
+        src: ['www/assets/css/**/*.css'],
+        dest: 'www/assets/css/custom/app.css',
       },
     },
 
@@ -27,9 +27,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'www/assets/css',
+          cwd: 'www/assets/css/custom',
           src: ['app.css', '!*.min.css'],
-          dest: 'www/assets/css',
+          dest: 'www/assets/css/custom',
           ext: '.min.css'
         }]
       }
