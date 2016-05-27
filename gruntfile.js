@@ -6,33 +6,30 @@ module.exports = function(grunt) {
 
     sass: {
       dist: {
-	options: {
-	  sourceMap: true	
-	},
-	files: {
+	  files: [{
           expand: true,
           cwd: 'www/assets/sass',
           src: ['*.scss', '!_*.scss'],
-          dest: 'www/assets/css',
+          dest: 'www/assets/css/custom',
           ext: '.css'
-        }
+        }]
       }
     },
 
     concat: {
       cssfiles: {
-        src: ['www/assets/css/*.css'],
-        dest: 'www/assets/css/app.css',
-      },
+        src: ['www/assets/css/**/*.css'],
+        dest: 'www/assets/css/custom/app.css'
+      }
     },
 
     cssmin: {
       dist: {
         files: [{
           expand: true,
-          cwd: 'www/assets/css',
+          cwd: 'www/assets/css/custom',
           src: ['app.css', '!*.min.css'],
-          dest: 'www/assets/css',
+          dest: 'www/assets/css/custom',
           ext: '.min.css'
         }]
       }
@@ -50,6 +47,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task(s).
-  grunt.registerTask('css-tasks', ['sass:dist', 'concat:cssfiles', 'cssmin:dist']);
+  grunt.registerTask('css-tasks', ['sass:dist', 'cssmin:dist']);
 
 };

@@ -16,6 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.1"
+    "jquery": "^2.2.1",
+    "font-awesome": "^4.6.2",
+    "bootstrap": "^3.3.6",
+    "jquery-easing": "*",
+    "parallax.js": "1.4.2"
   }
 }
