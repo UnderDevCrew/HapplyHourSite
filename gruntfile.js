@@ -19,8 +19,8 @@ module.exports = function(grunt) {
     concat: {
       cssfiles: {
         src: ['www/assets/css/**/*.css'],
-        dest: 'www/assets/css/custom/app.css',
-      },
+        dest: 'www/assets/css/custom/app.css'
+      }
     },
 
     cssmin: {
